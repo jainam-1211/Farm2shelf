@@ -1,0 +1,184 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Products</h1>
+        
+            <div>
+            <%=data1.price%>
+            <img src="/static/images/<%=data1.product_image%>" alt="background-image" srcset="">
+            </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/productInfo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+    <link rel="stylesheet" href="/static/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="/static/css/flaticon.css">
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="py-1 bg-primary">
+    <div class="container">
+      <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+        <div class="col-lg-12 d-block">
+          <div class="row d-flex">
+            <div class="col-md pr-4 d-flex topper align-items-center">
+              <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+              <span class="text">+ 1235 2355 98</span>
+            </div>
+            <div class="col-md pr-4 d-flex topper align-items-center">
+              <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+              <span class="text">sabkasaathsabkavikas@gmail.com</span>
+            </div>
+            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+              <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../home">Vikas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="../home" class="nav-link">Home</a></li>
+          <!-- {{!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="shop.html">Shop</a>
+              <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+              <a class="dropdown-item" href="product-single.html">Single Product</a>
+              <a class="dropdown-item" href="cart.html">Cart</a>
+              <a class="dropdown-item" href="checkout.html">Checkout</a>
+            </div>
+          </li> --}} -->
+          <li class="nav-item"><a href="../about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="../guidelines" class="nav-link">Farmer Guidelines</a></li>
+
+          <li class="nav-item"><a href="../productcategories" class="nav-link">Product Categories</a></li>
+          <li class="nav-item"><a href="../products" class="nav-link">Product</a></li>
+          <!-- {{!-- <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+           --}} -->
+          <!-- <li class="nav-item"><a href="../register" class="nav-link">Farmer's Registration</a></li> -->
+          <li class="nav-item"><a href="../addproduct" class="nav-link">Add Product</a></li>
+          <!-- <li class="nav-item"><a href="../login" class="nav-link">Login</a></li> -->
+          <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Mandi Bhav</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container py-4 my-4 mx-auto d-flex flex-column">
+        <div class="header">
+            <div class="row r1">
+                <div class="col-md-9 abc">
+                    <h1><%=data1.product_name%></h1>
+                </div>
+                <div class="col-md-3 text-right pqr"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <p class="text-right para">Based on 250 Review</p>
+            </div>
+        </div>
+        <div class="container-body mt-4">
+            <div class="row r3">
+                <div class="col-md-5 p-0 klo">
+                    <ul>
+                        <p><%=data1.product_description%></p>
+                        <% if (data1.product_category == 1) { %>
+                          <p>Category: Food Grain</p>
+                        
+                        <% }%>
+                        <% if (data1.product_category == 2) { %>
+                          <p>Category: Fruits</p>                       
+                        <% }%>
+                        <% if (data1.product_category == 3) { %>
+                          <p>Category: Vegetables</p>
+                        <% }%>
+                        
+
+                        <p class="price">₹ <%=data1.price%>/-</p>
+                        
+                        <form method="post" action="/productInfo/<%= data1._id %>">
+
+                          Buyer Name : <input type="text" name="bname">
+                          <br>
+                          <br>
+                          Suggested Price : <input type="text" name="sprice">
+                          <input type="submit" value="Submit">
+                        </form>
+<br>
+
+                        <% if(data1.suggested_price) {%>
+                          <p>Suggested Price:</p>
+
+                            <p><%= data1.suggested_buyer %> : <%= data1.suggested_price %> </p> 
+                        <% }%>
+
+                    </ul>
+                </div>
+                <div class="col-md-7"> <img src="/static/images/<%=data1.product_image%>" width="90%" height="95%"> </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer d-flex flex-column mt-5">
+            <div class="row r4">
+                
+                <div class="col-md-2 myt des"><a href="#">Description</a></div>
+                <div class="col-md-2 myt "><a href="#">Review</a></div>
+                <!-- <div class="col-md-2 myt "><button type="button"  class="btn btn-outline-warning"><a href="#">BUY NOW</a></button></div> -->
+                <div class="col-md-2 myt btn" ><a href="/gateway/<%= data1._id %>"><input type="button" value="BUY NOW" ></a></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
